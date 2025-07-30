@@ -10,8 +10,9 @@ Archer RSA (v6.11..00204.10014) exports  data to CSV without proper cell escapin
 
 ---
 
-## Affected Versions
+## Affected Target/Versions
 
+- Archer RSA
 - v6.11..00204.10014
 
 ---
