@@ -23,6 +23,11 @@ Archer RSA (v6.11..00204.10014) exports  data to CSV without proper cell escapin
 
 ---
 
+## Scope of Vuln
+
+- Although this example uses the Device Registration form, any form field in the system that is exported to CSV without proper escaping can be exploited in the same way.
+---
+
 ## Technical Details
 ```diff
 1. Access the Device Registration form: Open the application’s Device Registration page (or any form in the system that later exports to CSV).
@@ -36,5 +41,3 @@ Archer RSA (v6.11..00204.10014) exports  data to CSV without proper cell escapin
 5. Open the CSV: The user opens the downloaded CSV file in a spreadsheet application (e.g., Microsoft Excel, LibreOffice, Google Sheets).
 
 6. Trigger execution: The spreadsheet interprets the cell starting with = as a formula and executes the embedded command (e.g., launching calc.exe).
-
-Scope of Vuln: Although this example uses the Device Registration form, any form field in the system that is exported to CSV without proper escaping can be exploited in the same way.
